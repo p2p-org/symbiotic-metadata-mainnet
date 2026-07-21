@@ -7,4 +7,4 @@ on:
 
 jobs:
   generate:
-    uses: symbioticfi/metadata-validation-scripts/.github/workflows/full-info.yml@main
+    uses: symbioticfi/metadata-validation-scripts/.github/workflows/full-info.yml@e3824a8ec94aa353bb4f5828f490688e84f51721 # main
