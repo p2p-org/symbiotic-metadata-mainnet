@@ -20,13 +20,13 @@ jobs:
         id: changes
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Validate
-        uses: symbioticfi/metadata-validation-scripts@main
+        uses: symbioticfi/metadata-validation-scripts@e3824a8ec94aa353bb4f5828f490688e84f51721 # main
         with:
           files: ${{ steps.changes.outputs.files }}
           issue: ${{ github.event.number }}
