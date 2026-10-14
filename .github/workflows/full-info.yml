@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # reusable symbioticfi/metadata-validation-scripts/.github/workflows/full-info.yml
+
 jobs:
   generate:
     uses: symbioticfi/metadata-validation-scripts/.github/workflows/full-info.yml@main
